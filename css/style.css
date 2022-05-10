@@ -1,0 +1,161 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  width: 375px;
+  height: 96px;
+  position: absolute;
+  top: 5px;
+}
+
+.container {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 4.27%;
+  right: 87.2%;
+  top: 25%;
+  bottom: 25%;
+}
+
+.input-text {
+  position: absolute;
+  width: 343px;
+  height: 48px;
+  left: 100px;
+  top: 152px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 24px;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.botones {
+  position: absolute;
+  top: 410px;
+  left: 50px;
+}
+
+.advertencia {
+  padding: 20px;
+}
+
+.info {
+  width: 23px;
+}
+
+.btn-encriptar {
+  width: 170px;
+  padding: 13px;
+  background-color: #0a3871;
+  color: #f3f5fc;
+  border-radius: 10px;
+  margin: 17px;
+}
+
+.btn-desencriptar {
+  width: 170px;
+  padding: 13px;
+  border: 2px solid #0a3871;
+  color: #0a3871;
+  border-radius: 10px;
+}
+
+.btn-desencriptar:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  border: 2px solid #0572f8;
+  color: #0572f8;
+}
+
+.btn-encriptar:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  border: 2px solid #0572f8;
+}
+
+.contenedor-salida {
+  position: absolute;
+  border: 2px solid #0a3871;
+  border-radius: 10px;
+  margin: 10px;
+  left: 60%;
+}
+
+.contenedor-salida .muñeco {
+  width: 250px;
+  padding: 195px 0 0 60px;
+  margin: 52px;
+}
+
+.resultado {
+  position: absolute;
+  top: 7%;
+  left: 3%;
+  text-align: left;
+  font-size: 32px;
+  color: #0a3871;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  top: 87%;
+  background-color: #0a3871;
+  padding: 40px;
+  text-align: center;
+  color: #f3f5fc;
+}
+
+@media (max-width: 768px) {
+  .contenedor-salida {
+    top: 400px;
+    left: 5%;
+    width: 90%;
+    height: 240px;
+  }
+  .muñeco {
+    display: none;
+  }
+  .botones {
+    top: 307px;
+    left: 149px;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    width: 250px;
+    height: 76px;
+  }
+  .input-text {
+    width: 343px;
+    left: 4px;
+    top: 141px;
+    font-size: 25px;
+  }
+  .botones {
+    display: flex;
+    flex-wrap: nowrap;
+    top: 220px;
+    left: 32px;
+  }
+  .buton-encriptar {
+    width: 130px;
+    padding: 10px;
+    margin: 0 8px;
+  }
+  .buton-desencriptar {
+    width: 130px;
+    padding: 10px;
+  }
+  .footer {
+    right: -34px;
+  }
+}

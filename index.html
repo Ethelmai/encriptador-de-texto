@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo" id="titulo"><img src="./assets/Logo.png" alt="Logo de Alura"></h1>
+    </header>
+
+    <form class="container">
+        <div class="contenedor-entrada">
+            <input type="text" class="input-text" placeholder="Ingrese el texto aqui">
+        </div>
+
+        <div class="botones">
+            <div class="advertencia">
+                <img src="./assets/info.png" alt="Imagen de info" class="info">
+                <span> Solo letras minúsculas y sin acentos.</span>
+            </div>
+
+            <button type="submit" class="btn-encriptar error">Encriptar</button>
+
+            <button type="submit" class="btn-desencriptar">Desencriptar</button>
+        </div>
+
+        <div class="contenedor-salida">
+            <p class="resultado" oncopy="copiarTexto()"> </p>
+
+            <img src="./assets/Muñeco.png" alt="Dibujo del encripatodor" class="muñeco" id="muñeco">
+        </div>
+
+    </form>
+
+    <footer>
+        <p class="footer">&copy de Ethel Maidana para Alura 2022</p>
+    </footer>
+
+
+
+    <script src="./index.js"></script>
+
+</html>
